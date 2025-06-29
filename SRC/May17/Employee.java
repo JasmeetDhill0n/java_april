@@ -2,6 +2,9 @@ package May17;
 
 public class Employee {
 
+    public Employee(int i, double v, String jasmeet, String kaur, String mail) {
+    }
+
     public String name(String firstname) {
         return firstname;
     }
