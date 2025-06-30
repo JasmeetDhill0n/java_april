@@ -9,25 +9,17 @@ public class Main {
     public static void main(String[] args) {
         University.setUniversityName("Toronto univeristy");
         Person[] people = new Person[3];
-        people[0] = new Student("Jasmeet kaur",26,"jas123","java",3.99);
-        people[1] = new Professor("Alex",45,"IT","ALEX123",67000);
-        people[2] = new DepartmentHead("selina",45,"IT","sel123",80000,"102");
+        people[0] = new Student("Jasmeet kaur", 26, "jas123", "java", 3.99);
+        people[1] = new Professor("Alex", 45, "IT", "ALEX123", 67000);
+        people[2] = new DepartmentHead("selina", 45, "IT", "sel123", 80000, "102");
 
 
         for (int i = 0; i < people.length; i++) {
             System.out.println("\n");
             people[i].display();
 
-
-            if (people[i] instanceof Student) {
-                University.totalStudent++;
-            }
-            if (people[i] instanceof Professor) {
-                University.totalProfessor++;
-            }
         }
 
-        // Display university statistics
         University.getStatistics();
     }
 }
